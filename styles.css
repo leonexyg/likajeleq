@@ -1,0 +1,75 @@
+body {
+    background: linear-gradient(to right, #ffcccc, #ffe6e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff5e5e;
+    font-size: 36px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+}
+
+.image-container {
+    margin: 20px 0;
+}
+
+.heart-image {
+    width: 120px;
+    animation: heartbeat 1.5s infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #ff5e5e;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e64a4a;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+#message-container {
+    margin-top: 20px;
+}
+
+#message-container p {
+    color: #ff5e5e;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
